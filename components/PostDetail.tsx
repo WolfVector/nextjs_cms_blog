@@ -3,7 +3,7 @@ import moment from 'moment';
 
 const PostDetail = ({ post }: any) => {
   const getContentFragment = (index: number, text: string, obj: any, type: string) => {
-    let modifiedText: string | HTMLElement = text;
+    let modifiedText: any = text;
 
     if (obj) {
       if (obj.bold) {
