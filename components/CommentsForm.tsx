@@ -32,11 +32,15 @@ const CommentsForm = ({ slug }: any) => {
     }
 
     if(storeData) {
+      // @ts-ignore
       window.localStorage.setItem('name', name);
+      // @ts-ignore
       window.localStorage.setItem('name', email);
     }
     else {
+      // @ts-ignore
       window.localStorage.removeItem('name', name);
+      // @ts-ignore
       window.localStorage.removeItem('name', email);
     }
 
