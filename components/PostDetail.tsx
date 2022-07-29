@@ -1,8 +1,8 @@
 import React from 'react';
 import moment from 'moment';
 
-const PostDetail = ({ post }) => {
-  const getContentFragment = (index, text, obj, type) => {
+const PostDetail = ({ post }: any) => {
+  const getContentFragment = (index: number, text: string, obj: any, type: string) => {
     let modifiedText = text;
 
     if (obj) {

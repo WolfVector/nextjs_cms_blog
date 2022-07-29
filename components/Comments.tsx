@@ -3,8 +3,8 @@ import moment from 'moment';
 import parse from 'html-react-parser';
 import { getComments } from '../services';
 
-const Comments = ( { slug }) => {
-  const [comments, setComments] = useState([]);
+const Comments = ( { slug }: any) => {
+  const [comments, setComments] = useState<any[]>([]);
 
   useEffect(() => {
     getComments(slug)

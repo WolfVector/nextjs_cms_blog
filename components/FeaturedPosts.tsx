@@ -23,7 +23,7 @@ const responsive = {
 };
 
 const FeaturedPosts = () => {
-  const [featuredPosts, setFeaturedPosts] = useState([]);
+  const [featuredPosts, setFeaturedPosts] = useState<any[]>([]);
   const [featuredLoaded, setFeaturedLoaded] = useState<boolean>(false);
 
   useEffect(() => {

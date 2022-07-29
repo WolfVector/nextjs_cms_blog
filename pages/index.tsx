@@ -14,7 +14,7 @@ The component will load more articles when you reach the bottom
 //You must install this library
 //import { ThreeDots } from  'react-loader-spinner';
 
-const Home: NextPage = ({ posts }) => {
+const Home: NextPage = ({ posts }: any) => {
   /*const lastCreatedAt = useRef();
   const [posts, setPosts] = useState([]);
   let [loadingAnim, setLoadingAnim] = useState(null);

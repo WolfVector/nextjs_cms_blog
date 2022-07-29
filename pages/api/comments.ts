@@ -9,7 +9,7 @@ type Data = {
 
 export default async function comments(
   req: NextApiRequest,
-  res
+  res: any
 ) {
   //Autenticate to graphCMS
 

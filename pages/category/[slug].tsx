@@ -2,7 +2,7 @@ import React from 'react';
 import { getCategories, getCategoryPost } from '../../services';
 import { PostCard, Categories } from '../../components';
 
-const CategoryPost = ({ posts }) => {
+const CategoryPost = ({ posts }: any) => {
   return (
     <div className="container mx-auto px-10 mb-8">
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-12">
@@ -26,7 +26,7 @@ const CategoryPost = ({ posts }) => {
 
 export default CategoryPost
 
-export async function getStaticProps({ params }) {
+export async function getStaticProps({ params }: any) {
   const posts = await getCategoryPost(params.slug);
 
   return {

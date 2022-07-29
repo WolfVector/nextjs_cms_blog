@@ -3,8 +3,8 @@ import moment from 'moment';
 import Link from 'next/link';
 import { getRecentPosts, getSimilarPosts } from '../services';
 
-const PostWidget = ({ categories, slug }) => {
-  const [relatedPosts, setRelatedPosts] = useState([]);
+const PostWidget = ({ categories, slug }: any) => {
+  const [relatedPosts, setRelatedPosts] = useState<any[]>([]);
 
   useEffect(() => {
     //If we are seeing a particular article at the moment

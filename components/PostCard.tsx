@@ -2,7 +2,7 @@
  import moment from 'moment';
  import Link from 'next/link';
  
- const PostCard = ({ post }) => {
+ const PostCard = ({ post }: any) => {
   //console.log(post.createdAt);
 
   return (
