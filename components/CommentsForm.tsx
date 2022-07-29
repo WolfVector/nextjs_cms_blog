@@ -5,10 +5,10 @@ const CommentsForm = ({ slug }: any) => {
   const [error, setError] = useState<boolean>(false);
   const [localStorage, setlocalStorage] = useState(null);
   const [showSuccessMessage, setShowSuccessMessage] = useState<boolean>(false);
-  const commentEl = useRef();
-  const nameEl = useRef();
-  const emailEl = useRef();
-  const storeDataEl = useRef();
+  const commentEl = useRef<HTMLInputElement | any>();
+  const nameEl = useRef<HTMLInputElement | any>();
+  const emailEl = useRef<HTMLInputElement | any>();
+  const storeDataEl = useRef<HTMLInputElement | any>();
 
   useEffect(() => {
     nameEl.current.value = window.localStorage.getItem('name');
