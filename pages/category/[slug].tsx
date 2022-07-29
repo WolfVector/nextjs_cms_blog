@@ -27,7 +27,7 @@ const CategoryPost = ({ posts }: any) => {
 export default CategoryPost
 
 export async function getStaticProps({ params }: any) {
-  const posts = await getCategoryPost(params.slug);
+  const posts: any = await getCategoryPost(params.slug);
 
   return {
     props: { posts },
@@ -36,10 +36,10 @@ export async function getStaticProps({ params }: any) {
 }
 
 export async function getStaticPaths() {
-  const categories = await getCategories();
+  const categories: any[] = await getCategories();
 
   return {
-    paths: categories.map(({ slug }) => ( { params: { slug } } )),
+    paths: categories.map(({ slug }: any) => ( { params: { slug } } )),
     fallback: 'blocking'
   };
 }

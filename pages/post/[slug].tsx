@@ -26,7 +26,7 @@ const PostDetails = ({ post }: any) => {
 export default PostDetails
 
 export async function getStaticProps({ params }: any) {
-  const data = await getPostDetails(params.slug);
+  const data: any = await getPostDetails(params.slug);
   return  {
     props: {
       post: data
@@ -35,7 +35,7 @@ export async function getStaticProps({ params }: any) {
 }
 
 export async function getStaticPaths() {
-  const posts = await getPosts();
+  const posts: any = await getPosts();
   return {
     paths: posts.map(({ node: { slug } }) => (
       { params: { slug } }
